@@ -731,7 +731,7 @@ normalize <- function(object,
         pb = txtProgressBar(0,num_chunks,style = 3)
       }
       ind = 0
-      while(prev_end_col < num_cells)
+      while(prev_end_col <= num_cells)
       {
         ind = ind + 1
         if (num_cells - prev_end_col < chunk_size)
